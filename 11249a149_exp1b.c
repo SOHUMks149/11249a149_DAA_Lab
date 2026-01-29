@@ -16,19 +16,11 @@ int main() {
     int n, i;
     printf("Enter the number of terms: ");
     scanf("%d", &n);
-
-    if (n < 0) {
-        printf("Fibonacci series is not possible for negative terms.\n");
-    } else {
-        printf("Fibonacci Series: ");
-        
-        for (i = 0; i < n; i++) {
-            printf("%d ", fibonacci(i));
-        }
+    printf("Fibonacci Series: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", fibonacci(i));
+    }
         printf("\n");
     }
-
-    return 0;
-}
 
 
